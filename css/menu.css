@@ -1,0 +1,214 @@
+#menu, #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu {
+    width:204px;
+    margin: 5px 5px;
+}
+
+#menu:before, #menu:after {
+    content: "";
+    display: table;
+}
+
+#menu:after {
+    clear: both;
+}
+
+#menu .student{
+	width: 190px;
+	height: 50px;
+	background-image: url(../img/bg-menu.png);
+	background-position: -14px -14px;
+	margin: 10px auto;
+}
+
+#menu .student:hover{
+	background-position: -263px -14px;
+}
+
+#menu .undergraduate{
+	width: 190px;
+	height: 50px;
+	background-image: url(../img/bg-menu.png);
+	background-position: -14px -81px;
+	margin: 10px auto;
+}
+
+#menu .undergraduate:hover{
+	background-position: -263px -81px;
+}
+
+#menu .postgraduate{
+	width: 190px;
+	height: 50px;
+	background-image: url(../img/bg-menu.png);
+	background-position: -14px -153px;
+	margin: 10px auto;
+}
+
+#menu .postgraduate:hover{
+	background-position: -263px -153px;
+}
+
+#menu .news{
+	width: 190px;
+	height: 50px;
+	background-image: url(../img/bg-menu.png);
+	background-position: -14px -222px;
+	margin:10px auto;
+}
+
+#menu .news:hover{
+	background-position: -263px -222px;
+}
+
+#menu .student, #menu .undergraduate, #menu .postgraduate,#menu .news{
+	-webkit-transition: background-position 0.002s;
+}
+
+#menu li{
+	position: relative;
+	min-height: 30px;
+	padding: 8px 5px 8px 5px;
+}
+
+#menu ul li li{
+	font-weight: normal;
+}
+
+#menu ul li:first-child{
+	border-radius: 10px 10px 0 0;
+	margin-top: 0;
+}
+
+#menu ul li:last-child{
+	border-radius: 0 0 10px 10px;
+	margin-bottom: 0;
+}
+
+
+#menu ul{
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 190px;
+	width: 224px;
+	height: auto;
+	border-radius: 10px;
+	text-align: center;
+	transition: all .02s ease-in-out;
+}
+
+.student ul{
+	background-image:linear-gradient(to bottom, #75a2c4, #3878a7);
+}
+
+.student ul ul {
+	background-image:linear-gradient(to bottom, #7a96dd, #335bc4);
+}
+
+.student li:hover{
+	background-color: #4a5866;
+}
+
+.student li li:hover{
+	background-color: #25274a;
+}
+
+.student li:nth-child(2){
+	border-bottom: 3px #0644eb solid;
+}
+
+.student li li:nth-child(2){
+	border-bottom: none;
+}
+
+
+.undergraduate ul{
+	background-image:linear-gradient(to bottom, #e4c14a, #ba9230);
+}
+
+.undergraduate ul ul {
+	background-image:linear-gradient (to bottom, #7a96dd, #335bc4);
+}
+
+.undergraduate li:hover{
+	background-color: #a47c2a;
+}
+
+.undergraduate li li:hover{
+	background-color: #282508;
+}
+
+.postgraduate ul {
+	background-image: linear-gradient(to bottom, #d157b0, #b23190);
+}
+
+.postgraduate ul ul {
+	background-image: linear-gradient(to bottom, #c269b5, #a14293);
+}
+
+.postgraduate li:hover{
+	background-color: #9b3b54;
+}
+
+.postgraduate li li:hover{
+	background-color: #471625;
+}
+
+.news ul {
+	background-image: linear-gradient(to bottom, #73d157, #4fb231);
+}
+
+.news ul ul {
+	background-image: linear-gradient(to bottom, #7db974, #57984d);
+}
+.news li:hover{
+	background-color: #347823;
+}
+
+.news li li:hover{
+	background-color: #16320e;
+}
+
+#menu li{
+	margin: 5px auto;
+	color: white;
+	text-decoration: none;
+	line-height: 30px;
+	font-size: 20px;
+	transition:  .002s;
+}
+
+#menu li a{
+	color: white;
+	text-decoration: none;
+	line-height: 30px;
+	font-size: 20px;
+	transition:  .002s;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#menu li a{
+	color: white;
+	text-decoration: none;
+	line-height: 30px;
+	font-size: 20px;
+	transition:  .002s;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#menu li:hover>ul{
+	visibility: visible;
+}
+
+#menu ul ul{
+	top: 0;
+	left: 223px;
+}
